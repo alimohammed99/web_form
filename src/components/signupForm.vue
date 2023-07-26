@@ -40,7 +40,7 @@
 
         <!-- This is the field for skill(s) the User type(s) in. The skill(s) will be added to the Skill set array/folder. -->
 
-        <!-- @keyup fires when the user presses a key and lifts finger up. -->
+        <!-- @keyup fires when the user clicks a key and lifts finger up. -->
 
         <div v-for="skill in softSkills" :key="skill" class="pill">
             <span title="Click to remove" @click="deleteSkill(skill)">{{ skill }}</span>
@@ -52,7 +52,7 @@
         <span v-if="softSkills != ''" style="color:red; font-size:25px">Click on each skill to delete</span>
         <br><br>
         <!-- This will display only if we have chosen some skills already. It should not display if we have no skill. -->
-        <!-- v:for is for looping, and looping needs :key and that should be unique for each skill -->
+        <!-- v-for is for looping, and looping needs :key and that should be unique for each skill -->
 
 
 
